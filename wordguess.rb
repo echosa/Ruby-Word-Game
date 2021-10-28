@@ -75,6 +75,7 @@ def take_turn(target_word)
   guess = gets.chomp.downcase
   if guess == target_word
     player_wins(target_word)
+    true
   elsif guess.empty?
     give_up(target_word)
     true
